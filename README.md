@@ -1,2 +1,2 @@
 # markitup-chrome-extension
-Markdown editor Chrome extension for GitHub based on markItUp!
+Markdown editor Chrome extension for GitHub based on markItUp! http://markitup.jaysalvat.com/
