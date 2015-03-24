@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Markdown editor for GitHub",
+  "description": "Markdown editor Chrome extension for GitHub based on markItUp!",
+  "version": "1.0",
+
+  "permissions": [
+    "https://github.com/*"
+  ],
+  "icons":{"16":"icon_16.png", "48" : "icon.png", "128" : "icon_128.png"},
+  "content_scripts": [
+    {
+        "matches": ["https://github.com/*"],
+        "js": ["jquery.pack.js", "jquery.livequery.min.js", "markitup/jquery.markitup.js", "markitup/mySettings.js", "content-script.js"],
+	"css": ["markitup/skins/markitup/style.css", "markitup/sets/markdown/style.css"]
+     }
+  ],
+  "web_accessible_resources" : ["images/*", "markitup/sets/default/images/*", "markitup/skins/markitup/images/*",
+	"markitup/sets/markdown/images/*"
+]
+}
